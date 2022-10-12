@@ -12,8 +12,13 @@ body{
 .indexBody{
     display: grid;
     grid-template-areas: "header header header header"
+                        "artHead artHead artHead artHead"
                         "section section section aside"
                         "footer footer footer footer";
+}
+.artHead{
+    display: grid;
+    grid-template-areas: "artH artH artSec artSec";
 }
 .indexBody2{
     display: grid;
@@ -73,7 +78,10 @@ margin-left: 50px;
     background-color: lightgrey;
 }
 #artH{
-    margin-top: 40px;
+    grid-area: artH;
+}
+#artSec{
+    grid-area: artSec;
 }
 #img1{
     max-height: 300px;
@@ -90,6 +98,9 @@ margin-left: 50px;
 #link2{
     grid-area: navbar;
     background-color: lightcoral;
+}
+.geoList{
+    grid-area: aside;
 }
 #link3{
     grid-area: navbar;
@@ -149,6 +160,7 @@ ul#horizontal-list {
         margin: 30px;
 	}
 aside{
+    grid-area: aside;
     background-color: lightblue;
 }
 .geoList{
