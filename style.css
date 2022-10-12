@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    width: 1024px;
+    height: 768px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.indexBody{
+    display: grid;
+    grid-template-areas: "header header header header"
+                        "section section section aside"
+                        "footer footer footer footer";
+}
+.indexBody2{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "section section section section"
+                         "footer footer footer footer";
+}
+header{
+    display: grid;
+    grid-area: header;
+    grid-template-areas: "testSite navbar . login";
+    background-color: magenta;
+    text-align: center;
+    
+}
+.section1{
+    display: grid;
+    grid-area: section;
+    grid-template-areas: "art1 artC art2 aside";
+    background-color: grey;
+}
+.section2{
+    background-color: grey;
+    display: grid;
+    grid-area: section;
+    grid-template-areas: 
+        "formH"
+    "form form form";
+}
+form{
+    grid-area: form;
+}
+#formH{
+    grid-area: formH;
+    margin-top: -50px;
+}
+#art1{
+    grid-area: art1;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 200px;
+    background-color: lightgrey;
+    margin-left: 50px;
+}
+#art2{
+    grid-area: art2;
+margin-top: 20px;
+text-align: center;
+max-width: 200px;
+background-color: lightgrey;
+margin-left: 50px;
+}
+.artC{
+    grid-area: artC;
+    text-align: center;
+    background-color: lightgrey;
+}
+#artH{
+    margin-top: 40px;
+}
+#img1{
+    max-height: 300px;
+    max-width: 200px;
+}
+#testSite{
+    grid-area: testSite;
+}
+#link1{
+    display:inline;
+    grid-area: navbar;
+    background-color: lightcoral;
+}
+#link2{
+    grid-area: navbar;
+    background-color: lightcoral;
+}
+#link3{
+    grid-area: navbar;
+    background-color: lightcoral;
+}
+#sweden{
+    margin: 20px;
+}
+#norway{
+    margin: 20px;
+}
+#denmark{
+    margin: 20px;
+}
+#stockholm{
+    margin: 20px;
+    list-style: none;
+}
+#oslo{
+    margin: 20px;
+    list-style: none;
+}
+#copenhagen{
+    margin: 20px;
+    list-style: none;
+}
+#cities{
+    margin-top: -95px;
+}
+#login{
+    grid-area: login;
+    background-color: darkgray;
+}
+#index{
+    grid-area: login;
+    background-color: darkgray;
+}
+.linkUl{
+    display: inline;
+}
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	}
+	ul#horizontal-list li {
+		display: inline;
+        margin: 30px;
+	}
+aside{
+    background-color: lightblue;
+}
+.geoList{
+    align-content: center;
+}
+#geoH{
+    text-align: center;
+}
+footer{
+    max-height:30px;
+    grid-area: footer;
+    background-color: purple;
+}
