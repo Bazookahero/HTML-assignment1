@@ -27,21 +27,22 @@ header{
     grid-template-areas: "testSite navbar . login";
     background-color: magenta;
     text-align: center;
-    
+    max-height: 100px;
 }
 .section1{
     display: grid;
     grid-area: section;
     grid-template-areas: "art1 artC art2 aside";
     background-color: grey;
+    padding-bottom: 60px;
 }
 .section2{
     background-color: grey;
     display: grid;
     grid-area: section;
     grid-template-areas: 
-        "formH"
-    "form form form";
+    "form formH form form";
+    height: 650px;
 }
 form{
     grid-area: form;
@@ -157,7 +158,7 @@ aside{
     text-align: center;
 }
 footer{
-    max-height:30px;
+    height: 35px;
     grid-area: footer;
     background-color: purple;
 }
