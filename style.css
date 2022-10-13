@@ -4,21 +4,17 @@
 }
 body{
     font-family: sans-serif;
-    width: 1024px;
-    height: 768px;
+    max-width: 1024px;
+    max-height: 768px;
     margin-top: 20px;
     margin-left: 20px;
 }
 .indexBody{
     display: grid;
     grid-template-areas: "header header header header"
-                        "artHead artHead artHead artHead"
+                        "section section section aside"
                         "section section section aside"
                         "footer footer footer footer";
-}
-.artHead{
-    display: grid;
-    grid-template-areas: "artH artH artSec artSec";
 }
 .indexBody2{
     display: grid;
@@ -31,15 +27,31 @@ header{
     grid-area: header;
     grid-template-areas: "testSite navbar . login";
     background-color: magenta;
-    text-align: center;
     max-height: 100px;
 }
 .section1{
     display: grid;
     grid-area: section;
-    grid-template-areas: "art1 artC art2 aside";
+    grid-template-areas: "artH . artSec aside"
+                        "art1 art2 art2 aside";
     background-color: grey;
     padding-bottom: 60px;
+}
+#artH{
+    grid-area: artH;
+    background-color: red;
+    text-align: center;
+    max-width: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+#artSec{
+    grid-area: artSec;
+    background-color: red;
+    text-align: center;
+    height: 150px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 .section2{
     background-color: grey;
@@ -58,53 +70,46 @@ form{
 }
 #art1{
     grid-area: art1;
-    margin-top: 20px;
+    margin-top: 200px;
     text-align: center;
-    max-width: 200px;
+    max-width: 350px;
     background-color: lightgrey;
     margin-left: 50px;
+    
 }
 #art2{
     grid-area: art2;
-margin-top: 20px;
+margin-top: 200px;
 text-align: center;
-max-width: 200px;
+max-width: 350px;
 background-color: lightgrey;
-margin-left: 50px;
+margin-left: auto;
+margin-right: 50px;
 }
-.artC{
-    grid-area: artC;
-    text-align: center;
-    background-color: lightgrey;
-}
-#artH{
-    grid-area: artH;
-}
-#artSec{
-    grid-area: artSec;
-}
+
 #img1{
     max-height: 300px;
     max-width: 200px;
 }
 #testSite{
     grid-area: testSite;
+    margin-top: 10px;
 }
 #link1{
     display:inline;
     grid-area: navbar;
-    background-color: lightcoral;
+    background-color: lightpink;
 }
 #link2{
     grid-area: navbar;
-    background-color: lightcoral;
+    background-color: lightpink;
 }
 .geoList{
     grid-area: aside;
 }
 #link3{
     grid-area: navbar;
-    background-color: lightcoral;
+    background-color: lightpink;
 }
 #sweden{
     margin: 20px;
@@ -133,21 +138,35 @@ margin-left: 50px;
 #login{
     grid-area: login;
     background-color: darkgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: white;
+    text-decoration: none;
 }
 #index{
     grid-area: login;
     background-color: darkgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: white;
+    text-decoration: none;
 }
 .linkUl{
     display: inline;
+    margin-top: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    float: left;
 }
-#menu-outer {
-	height: 84px;
-	background: url(images/bar-bg.jpg) repeat-x;
-}
-
 .table {
-	display: table;   /* Allow the centering to work */
+	display: table;
 	margin: 0 auto;
 }
 
@@ -173,4 +192,8 @@ footer{
     height: 35px;
     grid-area: footer;
     background-color: purple;
+}
+.box{
+    border: 2px solid black;
+    height: 34px;
 }
